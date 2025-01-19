@@ -6,12 +6,12 @@ from openai import OpenAI
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-st.title('LLM Chat')
+# st.title('LLM Chat')
 
-with st.form('LoanApp'):
-    gender = st.selectbox(
-    'Select a Model',
-        ('Female', 'Male', 'Joint'))
+# with st.form('LoanApp'):
+#     gender = st.selectbox(
+#     'Select a Model',
+#         ('Female', 'Male', 'Joint'))
 
 st.title("ChatGPT-like clone")
 
