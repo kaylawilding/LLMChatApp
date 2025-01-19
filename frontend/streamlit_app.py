@@ -6,14 +6,13 @@ from openai import OpenAI
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-# st.title('LLM Chat')
+st.title('Chat with the LLM of Your Choice')
 
-# with st.form('LoanApp'):
-#     gender = st.selectbox(
-#     'Select a Model',
-#         ('Female', 'Male', 'Joint'))
+model = st.selectbox(
+    'Select a Model',
+        ('OpenAI', 'phi3', 'Mistral'))
 
-st.title("ChatGPT-like clone")
+st.title("Chat Below")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
