@@ -4,7 +4,7 @@ import os
 import pandas as pd
 from openai import OpenAI
 
-BACKEND_URL = os.getenv('BACKEND_URL')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 st.title('LLM Chat')
 
