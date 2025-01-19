@@ -12,7 +12,6 @@ model = st.selectbox(
     'Select a Model',
         ('OpenAI', 'phi3', 'Mistral'))
 
-st.title("Chat Below")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
